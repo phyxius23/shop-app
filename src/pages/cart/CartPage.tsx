@@ -21,7 +21,7 @@ export function CartPage() {
 
 	return (
 		<>
-         <div className="sticky top-12 border bg-white">
+         <div className="sticky top-12 bg-white">
             <h1 className="title">Cart</h1>
 
             <div className="flex flex-col gap-4 px-6 pt-3 pb-8 border-b-2">
