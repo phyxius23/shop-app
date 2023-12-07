@@ -28,4 +28,4 @@ dist-ssr
 .env.production
 
 # Folder
-server
+/server/
