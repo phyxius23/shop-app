@@ -78,7 +78,7 @@ export function CMSProductForm(props: CMSProductFormProps) {
 
    return (
       <div className={clsx(
-            'fixed bg-gray-400 w-full h-full left-0 z-10 transition-all duration-300 overflow-auto',
+            'fixed bg-gray-400 w-full h-full left-0 z-100 transition-all duration-300 overflow-auto',
             {'-bottom-full': !props.activeItem},
             {'bottom-0': props.activeItem},
          )}>
