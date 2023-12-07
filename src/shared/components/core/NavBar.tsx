@@ -23,7 +23,7 @@ export function NavBar() {
 	}
 
 	return (
-		<header className="bg-teal-950 text-white fixed top-0 left-0 right-0">
+		<header className="bg-teal-950 text-white fixed top-0 left-0 right-0 z-50">
 			<nav className="flex justify-around items-center gap-3">
 				{/* Shop button */}
 				<NavLink
