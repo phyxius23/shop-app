@@ -1,0 +1,1 @@
+export { useProductsService } from '@/services/products/useProductsService'
