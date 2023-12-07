@@ -38,10 +38,11 @@ export function CMSOrdersPage() {
                         <div>{new Date(order.created).toDateString()}</div>
                      </td>
                      <td className="text-left">
-                        <div>Total: € {order.total_price}</div>
+                        <div>Total: € {order.total_price.toFixed(2)}</div>
                         <div>{order.order.length} products</div>
                      </td>
                      <td className="text-center">
+                        <div className="flex flex-col md:flex-row md:justify-center gap-2">
                         {
                         order.status === 'pending' &&
                            <button className="btn primary" onClick={() => toggleOrderStatus(order.id, 'done')}>
@@ -49,8 +50,9 @@ export function CMSOrdersPage() {
                            </button>
                         }
                         <button className="btn danger" onClick={() => deleteOrder(order.id)}>
-                        <i className="fa fa-trash"></i>
+                           <i className="fa fa-trash !text-base"></i>
                         </button>
+                        </div>
                      </td>
                   </tr>
                   )
