@@ -23,12 +23,12 @@ export function NavBar() {
 	}
 
 	return (
-		<header className="bg-teal-950 text-white fixed top-0 left-0 right-0 z-50">
+		<header className="bg-teal-950 text-white fixed top-0 left-0 right-0 z-10">
 			<nav className="flex justify-around items-center gap-3">
 				{/* Shop button */}
 				<NavLink
 					to="shop"
-               title="shop"
+					title="shop"
 					className={isActive}
 				>
 					<i
@@ -44,7 +44,7 @@ export function NavBar() {
 							{/* Login button - visualizzato quando isLogged is false */}
 							<NavLink
 								to="login"
-                        title="login"
+								title="login"
 								className={isActive}
 							>
 								<i
@@ -59,7 +59,7 @@ export function NavBar() {
 						{/* CMS & Logout buttons - visualizzati quando isLogged is true */}
 						<NavLink
 							to="cms"
-                     title="cms"
+							title="cms"
 							className={isActive}
 						>
 							<i
@@ -68,7 +68,10 @@ export function NavBar() {
 							></i>
 						</NavLink>
 
-						<button onClick={logoutHandler} title="logout">
+						<button
+							onClick={logoutHandler}
+							title="logout"
+						>
 							<i
 								className="fa fa-sign-out"
 								aria-hidden="true"
